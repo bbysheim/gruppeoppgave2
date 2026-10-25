@@ -1,80 +1,79 @@
-# Individual solution: Erling's project team
-# The score represents how strongly the choises support trust and cooperation.
+# Individuell løsning: Erlings prosjektteam
+# Poengsummen viser hvor mye valgene støtter tillit og samarbeid.
 
-print("ERLING AND THE CITIZEN PORTAL")
-print("Six weeks into the project, the team is facing disagreements.")
-print("The first prototype is due in three weeks. Erling must make three decisions.\n ")
+print("ERLING OG DEN DIGITALE MEDBORGERPORTALEN")
+print("Seks uker inn i prosjektet opplever teamet flere uenigheter.")
+print("Den første prototypen skal være klar om tre uker. Erling må ta tre beslutninger.\n")
 
 score = 0
 
-#Decision 1: Silje and Elias
-print("DECISION 1: how should Erling habdle the conlict between Silje and Elias?")
-print("A. Arrange a meeting where both can explain their views. (+2 points)")
-print("B. Speak to them individually. (+2 points)")
-print("C. Postpone the conflict and hope they resolve it themselves. (+1 point)")
+# Beslutning 1: Silje og Elias
+print("BESLUTNING 1: Hvordan bør Erling håndtere konflikten mellom Silje og Elias?")
+print("A. Arrangere et møte der begge kan forklare synspunktene sine. (+2 poeng)")
+print("B. Snakke med dem hver for seg. (+2 poeng)")
+print("C. Utsette konflikten og håpe at de løser den selv. (+1 poeng)")
 
-choice1 = input("Choose A, B, or C: "). strip().lower()
+choice1 = input("Velg A, B eller C: ").strip().lower()
 while choice1 not in ("a", "b", "c"):
-    choice1 = input("Please enter A, B, or C:").strip().lower()
+    choice1 = input("Ugyldig valg. Skriv A, B eller C: ").strip().lower()
 
-    if choice1 == "a":
-        print("Both. explain their perspectives and may gain a better understanding of each other.")
-        score += 2
-    elif choice1 =="b":
-        print("Each person can speak privately, but Erling may need a joint follow-up meeting.")
-        score += 2
-    else:
-        print("They continue working, but the unresolved conflict may affect the next discussion.")
-        score += 1
+if choice1 == "a":
+    print("Begge forklarer perspektivene sine og kan få bedre forståelse for hverandre.")
+    score += 2
+elif choice1 == "b":
+    print("Begge får snakke med Erling hver for seg. Et felles oppfølgingsmøte kan fortsatt være nødvendig.")
+    score += 2
+else:
+    print("De fortsetter arbeidet, men den uløste konflikten kan påvirke neste diskusjon.")
+    score += 1
 
-#Decission 2: Hamdi and Hallgeir
-print("\nDECISSION 2: how should Erling handle their disagreement about citizen meetings?")
-print("A. Arrangea joint meeting to discuss their needs. (+2 points)")
-print("B. Speak with both and make a shared plan that considersb oth perspectives. (+2 points)")
-print("C. Let them try to find a solution themselves. (+1 point)")
+# Beslutning 2: Hamdi og Hallgeir
+print("\nBESLUTNING 2: Hvordan bør Erling håndtere uenigheten om digitale folkemøter?")
+print("A. Arrangere et felles møte for å diskutere behovene deres. (+2 poeng)")
+print("B. Snakke med begge og lage en felles plan som tar hensyn til begge perspektivene. (+2 poeng)")
+print("C. La dem prøve å finne en løsning selv. (+1 poeng)")
 
-choice2 = input("Chose A, B, or C: "). strip().lower()
+choice2 = input("Velg A, B eller C: ").strip().lower()
 while choice2 not in ("a", "b", "c"):
-    choice2 = input("Please enter A, B, or C: ").strip().lower()
+    choice2 = input("Ugyldig valg. Skriv A, B eller C: ").strip().lower()
 
-    if choice2 == "a":
-        print("They discuss their needs and try to agree on a solution.")
-        score += 2
-    elif choce2 == "b":
-        print("Erling helps them make a plan that balances structure with open dialogue.")
-        score += 2
-    else:
-        print("They have responsibility for solving the issue, but the disagreement may continue.")
-        score += 1
+if choice2 == "a":
+    print("De diskuterer behovene sine og prøver å bli enige om en løsning.")
+    score += 2
+elif choice2 == "b":
+    print("Erling hjelper dem med å lage en plan som balanserer struktur og åpen dialog.")
+    score += 2
+else:
+    print("De får ansvar for å løse saken selv, men uenigheten kan fortsette.")
+    score += 1
 
-#Decision 3: Motivation and the prototype deadline
-print("\nDECISSION 3: What should Erling prioritise as rhe deadline approaches?")
-print("A. Build relationships through cooperation and social activities. (+2 points)")
-print("B. Make a work plan, clarify responsibilities, and follow up with the team. (+2 points)")
-print("C. Focus on deliverables and postpone work on the conflicts. (+1 point)")
+# Beslutning 3: Motivasjon og prototypfristen
+print("\nBESLUTNING 3: Hva bør Erling prioritere når fristen nærmer seg?")
+print("A. Styrke relasjonene gjennom samarbeid og sosiale aktiviteter. (+2 poeng)")
+print("B. Lage en arbeidsplan, avklare ansvar og følge opp teamet. (+2 poeng)")
+print("C. Fokusere på leveransene og utsette arbeidet med konfliktene. (+1 poeng)")
 
-choice3 = input("Choose A, B, or c: ").strip().lower()
+choice3 = input("Velg A, B eller C: ").strip().lower()
 while choice3 not in ("a", "b", "c"):
-    choice3 = input("Please enter A, B, or C: ") .strip().lower()
+    choice3 = input("Ugyldig valg. Skriv A, B eller C: ").strip().lower()
 
-    if choice3 == "a":
-        print("The team gets time to strenthen trust and communication.")
-        score += 2
-    elif choice3 == "b":
-        print("The team gets clear tasks, responsabilities, and follow-up.")
-        score += 2
-    else:
-        print("The team focusses on delivery, but unresolved conflict may weaken cooperation.")
-        score += 1
+if choice3 == "a":
+    print("Teamet får tid til å styrke tilliten og forbedre kommunikasjonen.")
+    score += 2
+elif choice3 == "b":
+    print("Teamet får tydelige oppgaver, ansvarsområder og oppfølging.")
+    score += 2
+else:
+    print("Teamet fokuserer på leveransene, men uløste konflikter kan svekke samarbeidet.")
+    score += 1
 
-# The total score determines one of the three endings in the group's flowchart.
-print("\nFINAL RESULT")
-print(f"Team cooperation score: {score} out of 6")
+# Total poengsum avgjør hvilken av de tre avslutningene spilleren får.
+print("\nSLUTTRESULTAT")
+print(f"Samarbeidspoeng: {score} av 6")
 
 if score == 6:
-    print("Ending 1: Good cooperation. The team restores trust and moves forward together.")
+    print("Slutt 1: Godt samarbeid. Teamet gjenoppretter tilliten og går videre sammen.")
 elif score >= 4:
-    print("Ending 2: Partial resolution. Some conflicts remain, but the project continues.")
+    print("Slutt 2: Konfliktene løses delvis. Noen utfordringer gjenstår, men prosjektet fortsetter.")
 else:
-    print("Ending 3: The project is at risk. Conflict may weaken the team and cause delays.")
-    
+    print("Slutt 3: Prosjektet er i fare. Konfliktene kan svekke teamet og føre til forsinkelser.")
