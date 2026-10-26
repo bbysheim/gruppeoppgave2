@@ -57,7 +57,9 @@ def vis_beslutning(tittel, navn, tekst):
 
 # ---------- Åpning: Erling før jobb ----------
 print("=" * 60)
-print("        ERLING OG MEDBORGERPORTALEN")
+print("")
+print("        STORMING ERLING")
+print("")
 print("=" * 60)
 print()
 
@@ -244,6 +246,6 @@ else:
         print("Prototypen er ikke klar til fristen.")
 
 
-# ---------- Oppsummering ----------
+# Oppsummering 
 print("\nDine valg: " + valg1 + ", " + valg2 + ", " + valg3)
 print(f"Tillit: {tillit} | Fremdrift: {fremdrift}")
