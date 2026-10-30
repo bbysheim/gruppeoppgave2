@@ -1,11 +1,5 @@
 # Gruppeoppgave 2 - IS-118. Høsten 2026
 # Interaktiv historiefortelling om Erlings prosjektarbeid.
-#
-# Spillet har tre beslutningspunkter med to valg hver. Valgene lagres i
-# variabler, og poengene for tillit og fremdrift avgjør hvilket utfall
-# spilleren får til slutt.
-
-
 # ---------- Hjelpefunksjoner ----------
 
 def hent_valg(alt_a, alt_b):
